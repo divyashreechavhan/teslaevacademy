@@ -1,0 +1,237 @@
+
+.timeline-box:nth-child(2n)::after {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -13%;
+    border-radius: 50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    /* background-color: red; */
+    z-index: 1;
+} 
+
+.timeline-divider {
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 3px dashed #4dbf1c;/* #0096fa6b; */
+    top: 10%;
+    left: 50%;
+
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 30%;
+    transform: rotate(90deg);
+    z-index: 3;
+}
+.timeline-traveller img{
+    transform: rotate(90deg);
+    /* width: 3rem; */
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mainCardContainer {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 500px));
+    /* grid-gap: 70px; */
+    justify-content: space-around;
+    margin-top: 0%;
+    overflow-x: auto;
+  
+}
+
+.mainCardContainer2 {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(300px, 500px));
+   grid-gap: 70px;
+   justify-content: space-around;
+ 
+}
+@media only screen and (max-width:600px){
+    .mainCardContainer{
+              
+      display: list-item;
+      width: 85%;
+    }
+    .mainCardContainer2{
+              
+        display: list-item;
+        width: 85%;
+        
+      }
+  }
+  
+
+.containerB {
+  position: relative;
+  height: 450px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0px 2px 5px rgba(0,0,0,0.3);
+  transition: box-shadow 0.3s ease-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.containerB:hover {
+  box-shadow: 1px 2px 10px rgba(0,0,0,0.5);
+}
+
+.img-containerB {
+  background-color: #1e2c18;
+  position: absolute;
+ left: 9%;
+  top: 5%;
+  height: 65%;
+  width: 80%;
+  transition: transform 0.3s ease-out;
+  z-index: 2;
+}
+
+.img-containerB:hover {
+	cursor: pointer;
+}
+
+/* .containerB:hover .img-containerB {
+	transform: translateY(-100px);
+} */
+
+.img-containerB > img {
+  height: 100%;
+  width: 100%;
+  transition: opacity 0.3s ease-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containerB:hover > .img-containerB > img {
+  opacity: 0.5;
+}
+
+.social-media1 {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media1 > li {
+  list-style: none;
+}
+
+.social-media1 > li > a {
+  display: block;
+  height: 30px;
+  width: 30px;
+  background-color: #FFF;
+  text-align: center;
+  color: #262626;
+  margin: 0 5px;
+  border-radius: 50%;
+  opacity: 0;
+  transform: translateY(200px);
+  transition: all 0.3s ease-out;
+}
+
+.containerB:hover > .social-media1 > li > a {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.social-media1 > li > a > .fa {
+  font-size: 24px;
+  line-height: 32px;
+  transition: transform 0.3s ease-out;
+}
+
+.social-media1 > li > a:hover > .fa {
+  transform: rotateY(360deg);
+}
+
+.containerB:hover .social-media1 li:nth-child(1) a {
+	transition-delay: 0s;
+}
+
+.containerB:hover .social-media1 li:nth-child(2) a {
+	transition-delay: 0.1s;
+}
+
+.containerB:hover .social-media1 li:nth-child(3) a {
+	transition-delay: 0.2s;
+}
+
+.containerB:hover .social-media1 li:nth-child(4) a {
+	transition-delay: 0.3s;
+}
+
+.containerB:hover .social-media1 li:nth-child(5) a {
+	transition-delay: 0.4s;
+}
+
+.user-info {
+  position: absolute;
+	bottom: 0;
+	left: 0;
+	background-color: #FFF;
+	height: 125px;
+	width: 100%;
+	box-sizing: border-box;
+  text-align: center
+}
+
+.user-info > h2 {
+  padding: 0;
+  margin: 10px 0;
+}
+
+.user-info > span {
+  color: #262626;
+  font-size: 16px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .containerB {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }

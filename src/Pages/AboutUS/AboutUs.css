@@ -1,0 +1,166 @@
+.fristsection {
+    height: 75vh;
+ 
+}
+
+.fristhalf {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: black; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 70%;
+    margin:auto;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-top: 2%;
+
+
+}
+.main:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);   
+}
+
+.section {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 70%;
+    margin: auto;
+    margin-top: 0px;
+    font-family: 'Oswald', sans-serif;
+ 
+
+}
+
+.secondhalf img {
+    border-radius: 100px;
+    border: black 2px;
+}
+
+.secondhalf h4 {
+    margin-left: 2rem;
+}
+
+.bigtext {
+    font-size: 37px;
+}
+
+.smalltext {
+    padding-top: 2px;
+    font-size: 18px;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+
+.secondSectionCard {
+    /* Add shadows to create the "secondSectionCard" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 18%;
+    margin: auto;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .secondSectionCard:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .secondSection .container {
+    padding: 2px 16px;
+    text-align: center;
+  }
+  .secondSection{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .secondMain {
+   display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 40%;
+    margin:auto;
+    padding: 3%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin-top: 2%;
+
+
+}
+.second-fristhalf {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.MotoPara{
+    width: 80%;
+    /* display: block; */
+    margin-left: auto;
+    margin-right: auto;
+}
+.advisoryManagement{
+    display: flex;
+}
+@media only screen and (max-width:800px){
+
+    .secondhalf img {
+
+        margin-left: 10%;
+
+    }
+    .smalltext {
+   
+        margin-left: 20px;
+    }
+    .MotoPara{
+        width: 80%;
+        /* display: block; */
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 258%;
+    }
+    .secondSectionCard{
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 7%;
+    }
+    .advisoryManagement{
+        display: list-item;
+    }
+    .secondMain {
+        display: list-item;
+        max-width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+ .secondSection{
+
+    margin: auto;
+    display: list-item;
+ }
+
+ .main{
+    display: list-item;
+ }
+     }
+ 
+ 

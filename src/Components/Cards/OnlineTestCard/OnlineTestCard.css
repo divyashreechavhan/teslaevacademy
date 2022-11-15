@@ -1,0 +1,45 @@
+.card {
+  /* text-align: center; */
+  margin-left: 2%;
+  margin-top: 5%;
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+
+}
+
+
+.col-md-8 {
+  width: 95%;
+}
+
+.alltestDatas {
+  margin: 0 -5px;
+  margin-left: 10%;
+  margin-bottom: 4%;
+
+
+}
+
+/* Clear floats after the columns */
+.alltestDatas:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+
+
+@media only screen and (min-width:500px) and (max-width:820px) {
+  .alltestDatas {
+
+    display: grid;
+    width: 30%;
+    grid-gap: 50px;
+    justify-content: space-around;
+
+  }
+}

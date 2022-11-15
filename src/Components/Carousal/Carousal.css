@@ -1,0 +1,20 @@
+
+.carousel .item {
+    height: 100px;
+  }
+  
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 400px;
+  }
+
+
+.d-block{
+    height: 150px;
+}
+.carousel-inner{
+    height: 400px;
+}
+  

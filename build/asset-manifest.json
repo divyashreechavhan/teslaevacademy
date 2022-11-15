@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1178eeac.css",
+    "main.js": "/static/js/main.251d9adf.js",
+    "static/js/787.862c9c5f.chunk.js": "/static/js/787.862c9c5f.chunk.js",
+    "static/media/ScooterLTE.jpg": "/static/media/ScooterLTE.ec8ff6cf09f928a2139e.jpg",
+    "static/media/contactus1.jpg": "/static/media/contactus1.82aff82e0146e4853ab7.jpg",
+    "index.html": "/index.html",
+    "main.1178eeac.css.map": "/static/css/main.1178eeac.css.map",
+    "main.251d9adf.js.map": "/static/js/main.251d9adf.js.map",
+    "787.862c9c5f.chunk.js.map": "/static/js/787.862c9c5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1178eeac.css",
+    "static/js/main.251d9adf.js"
+  ]
+}

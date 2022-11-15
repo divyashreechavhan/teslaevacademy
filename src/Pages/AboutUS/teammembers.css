@@ -1,0 +1,17 @@
+.AllTeam{
+    margin-bottom: 110%;
+    margin-left:6%;
+    /* margin-right: auto; */
+}
+@media only screen and (max-width:800px){
+
+    .AllTeam{
+        margin-bottom: 1520%;
+        margin-left:6.5%;
+       
+    }
+
+
+
+    
+}

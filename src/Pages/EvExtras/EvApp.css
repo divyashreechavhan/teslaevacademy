@@ -1,0 +1,48 @@
+.appRow {
+    text-align: center;
+}
+
+.firstCard {
+    position: relative;
+    text-align: center;
+    width: 70%;
+}
+
+.firstCard .AppInstallBtn {
+    position: absolute;
+    top: 83%;
+    left: 78%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #4dbf1c;
+    color: white;
+    font-size: 20px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.AppImg2 {
+    width: 70%;
+    height: 920px;
+    display: block;
+    padding-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.AppBtn {
+    display: block;
+    left: -60px;
+    margin-top: 35px;
+
+}
+
+.AppInstallBtn {
+    background-color: #4dbf1c;
+}
+
+.AppInstallBtn:hover {
+    background-color: #4dbf1ccc;
+}

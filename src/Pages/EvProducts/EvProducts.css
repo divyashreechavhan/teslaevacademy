@@ -1,0 +1,204 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.ProductCard {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem auto;
+  box-shadow: 0 3px 7px -1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.6%;
+  background: #fff;
+  line-height: 1.4;
+  font-family: sans-serif;
+  border-radius: 5px;
+  overflow: hidden;
+  z-index: 0;
+}
+.ProductCard a {
+  color: inherit;
+}
+.ProductCard a:hover {
+  color: #5ad67d;
+}
+.ProductCard:hover .ProductPhoto {
+  transform: scale(1.1) rotate(1deg);
+}
+.ProductCard .ProductMeta {
+  position: relative;
+  z-index: 0;
+  height: 200px;
+}
+.ProductCard .ProductPhoto {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height:229px ; 
+  width:280px;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s;
+}
+.ProductCard .details,
+.ProductCard .details ul {
+  margin: auto;
+  padding: 0;
+  list-style: none;
+}
+.ProductCard .details {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  margin: auto;
+  transition: left 0.2s;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9rem;
+}
+.ProductCard .details a {
+  text-decoration: dotted underline;
+}
+.ProductCard .details ul li {
+  display: inline-block;
+}
+.ProductCard .details .author:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f007";
+}
+.ProductCard .details .date:before {
+  font-family: FontAwesome;
+  margin-right: 10px;
+  content: "\f133";
+}
+.ProductCard .details .tags ul:before {
+  font-family: FontAwesome;
+  content: "\f02b";
+  margin-right: 10px;
+}
+.ProductCard .details .tags li {
+  margin-right: 2px;
+}
+.ProductCard .details .tags li:first-child {
+  margin-left: -4px;
+}
+.ProductCard .ProductDescription {
+  padding: 1rem;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+.ProductCard .ProductDescription h1,
+.ProductCard .ProductDescription h2 {
+  font-family: Poppins, sans-serif;
+}
+.ProductCard .ProductDescription h1 {
+  line-height: 1;
+  margin: 0;
+  font-size: 1.7rem;
+}
+.ProductCard .ProductDescription h2 {
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #a2a2a2;
+  margin-top: 5px;
+}
+.ProductCard .ProductDescription .read-more {
+  text-align: right;
+  font-size: 25px;
+}
+.ProductCard .ProductDescription .read-more a {
+  color: #5ad67d;
+  display: inline-block;
+  position: relative;
+}
+.ProductCard .ProductDescription .read-more a:after {
+  content: "\f061";
+  font-family: FontAwesome;
+  margin-left: -10px;
+  opacity: 0;
+  vertical-align: middle;
+  transition: margin 0.3s, opacity 0.3s;
+}
+.ProductCard .ProductDescription .read-more a:hover:after {
+  margin-left: 5px;
+  opacity: 1;
+}
+.ProductCard p {
+  position: relative;
+  margin: 1rem 0 0;
+}
+.ProductCard p:first-of-type {
+  margin-top: 1.25rem;
+}
+.ProductCard p:first-of-type:before {
+  content: "";
+  position: absolute;
+  height: 5px;
+  background: #5ad67d;
+  width: 35px;
+  top: -0.75rem;
+  border-radius: 3px;
+}
+.ProductCard:hover .details {
+  left: 0%;
+}
+@media (min-width: 640px) {
+  .ProductCard {
+    flex-direction: row;
+    max-width: 700px;
+  }
+  .ProductCard .ProductMeta {
+    flex-basis: 40%;
+    height: auto;
+  }
+  .ProductCard .ProductDescription {
+    flex-basis: 60%;
+  }
+  .ProductCard .ProductDescription:before {
+    transform: skewX(-3deg);
+    content: "";
+    background: #fff;
+    width: 30px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+  .ProductCard.alt {
+    flex-direction: row-reverse;
+  }
+  .ProductCard.alt .ProductDescription:before {
+    left: inherit;
+    right: -10px;
+    transform: skew(3deg);
+  }
+  .ProductCard.alt .details {
+    padding-left: 25px;
+  }
+}
+.ProductRegisterLink{
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.ProductRegisterLink a{
+  color: black;
+  text-decoration: none;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+.ProductRegisterLink a:hover{
+  color: blue;
+  text-decoration: underline;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
